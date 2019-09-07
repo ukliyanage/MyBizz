@@ -11,4 +11,8 @@
     <string name="add_date"></string>
     <string name="save_btn">SAVE DETAILS</string>
     <string name="cancel_btn">CANCEL ALL</string>
+
+
+    <string name="txt_income">txt_income</string>
+
 </resources>
