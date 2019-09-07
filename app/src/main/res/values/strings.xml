@@ -14,5 +14,9 @@
 
 
     <string name="txt_income">txt_income</string>
+    <string name="txt_addincome">addincome</string>
+    <string name="add_source">add_source</string>
+    <string name="add_income_amount">add_income_amount</string>
+    <string name="add_income_date">add_income_date</string>
 
 </resources>

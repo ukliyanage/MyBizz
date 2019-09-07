@@ -11,7 +11,23 @@ public class DBhelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "USERINFO.DB";
     private static final int DATABASE_VERSION = 1;
-    private static final String CREATE_QUERY = "CREATE TABLE "+ Creditors.NewCreditorInfo.TABLE_NAME+"("+ Creditors.NewCreditorInfo.USER_NAME+" TEXT,"+ Creditors.NewCreditorInfo.USER_PHONE+" TEXT,"+ Creditors.NewCreditorInfo.USER_AMOUNT+" TEXT," + Creditors.NewCreditorInfo.USER_DATE+" TEXT);";
+
+
+//-----------------CREDITOR TABLE-----------------
+    private static final String CREATE_QUERY =
+            "CREATE TABLE "+ Creditors.NewCreditorInfo.TABLE_NAME+"("+
+                    Creditors.NewCreditorInfo.USER_NAME+" TEXT,"+
+                    Creditors.NewCreditorInfo.USER_PHONE+" TEXT,"+
+                    Creditors.NewCreditorInfo.USER_AMOUNT+" TEXT," +
+                    Creditors.NewCreditorInfo.USER_DATE+" TEXT);";
+
+//-----------------INCOME TABLE--------------------
+    private static final String CREATE_QUERY1 =
+        "CREATE TABLE "+ Income.NewIncomeInfo.TABLE_NAME+"("+
+                Income.NewIncomeInfo.INCOME_DATE+" TEXT,"+
+                Income.NewIncomeInfo.SOURCE+" TEXT,"+
+                Income.NewIncomeInfo.INCOME_AMOUNT+" TEXT);";
+
 
     public DBhelper(Context context) {
 
@@ -26,6 +42,8 @@ public class DBhelper extends SQLiteOpenHelper {
         Log.e("DATABASE OPERATIONS","Table Created...");
     }
 
+//------------------add creditors------------
+
     public void addInformation(String name, String phone, String amount, String data, SQLiteDatabase db){
 
         ContentValues contentValues = new ContentValues();
@@ -35,6 +53,17 @@ public class DBhelper extends SQLiteOpenHelper {
         contentValues.put(Creditors.NewCreditorInfo.USER_DATE,data);
         db.insert(Creditors.NewCreditorInfo.TABLE_NAME,null,contentValues);
         Log.e("DATABASE OPERATIONS","One Row Inserted...");
+    }
+
+//---------------------add income-----------------
+
+    public void addIncomeInfo(String date,String source, String amount,SQLiteDatabase db){
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(Income.NewIncomeInfo.INCOME_DATE,date);
+        contentValues.put(Income.NewIncomeInfo.SOURCE,source);
+        contentValues.put(Income.NewIncomeInfo.INCOME_AMOUNT,amount);
+        db.insert(Income.NewIncomeInfo.TABLE_NAME,null,contentValues);
+        Log.e("DATABASE_OPERATIONS","One row is inserted...");
     }
 
     @Override
