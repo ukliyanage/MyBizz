@@ -19,4 +19,14 @@ public class HOME extends AppCompatActivity {
         Intent intent=new Intent(this,IncomeMainActivity.class);
         startActivity(intent);
     }
+
+    public void goCreditors(View view){
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void goDebitors(View view){
+        Intent intent=new Intent(this,DebitorHome.class);
+        startActivity(intent);
+    }
 }
