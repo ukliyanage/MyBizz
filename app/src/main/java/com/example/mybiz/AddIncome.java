@@ -29,6 +29,8 @@ public class AddIncome extends AppCompatActivity {
         IncomeAmount=(EditText)findViewById(R.id.add_amount);
 
 
+
+
     }
 
     public void addIncome(View view){
@@ -42,8 +44,12 @@ public class AddIncome extends AppCompatActivity {
         dBhelper.close();
     }
 
-    public void cancel(View view){
-        Intent intent=new Intent(this,IncomeMainActivity.class);
-        startActivity(intent);
+    public void clearControls(View view){
+        IncomeSource.setText("");
+        IncomeDate.setText("");
+        IncomeAmount.setText("");
+
     }
+
+
 }
