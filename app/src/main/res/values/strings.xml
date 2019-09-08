@@ -5,6 +5,19 @@
     <string name="view_btn">View Creditor</string>
     <string name="txt_creditor">CREDITORS</string>
 
+    <string name="txt_debitor">DEBITORS</string>
+
+
+<!--    bskvj-->
+    <string name="home_c">CREDITORS</string>
+
+    <string name="home_d">DEBITORS</string>
+
+
+
+
+
+
     <string name="txt_addcreditor">ADD CREDITORS</string>
     <string name="add_namec"></string>
     <string name="add_phonec"></string>
@@ -13,13 +26,18 @@
     <string name="savec_btn">SAVE DETAILS</string>
     <string name="clearc_btn">CLEAR ALL</string>
 
-    <string name="txt_adddebitor">ADD DEBITORS</string>
-    <string name="add_named"></string>
-    <string name="add_phoned"></string>
-    <string name="add_amountd"></string>
-    <string name="add_dated"></string>
-    <string name="saved_btn">SAVE DETAILS</string>
-    <string name="cleard_btn">CLEAR ALL</string>
+
+
+
+
+
+<!--    <string name="txt_adddebitor">ADD DEBITORS</string>-->
+<!--    <string name="add_named"></string>-->
+<!--    <string name="add_phoned"></string>-->
+<!--    <string name="add_amountd"></string>-->
+<!--    <string name="add_dated"></string>-->
+<!--    <string name="saved_btn">SAVE DETAILS</string>-->
+<!--    <string name="cleard_btn">CLEAR ALL</string>-->
 
 
     <string name="txt_income">INCOME</string>
@@ -34,6 +52,9 @@
     <string name="amount">Amount</string>
     <string name="income_save_btn">SAVE DETAILS</string>
     <string name="income_cancel_btn">CANCEL ALL</string>
+
+
+
 
 
 </resources>

@@ -14,7 +14,7 @@
 
 
     <TextView
-        android:id="@+id/txt_adddebitor"
+        android:id="@+id/txt_addcreditor"
         android:layout_width="243dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
