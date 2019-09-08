@@ -14,10 +14,10 @@ public class DebitorMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_debitor_main);
     }
 
-    public void pressAdd(View view){
-        Intent intent = new Intent(this,AddCreditor.class);
-        startActivity(intent);
-
-    }
+//    public void pressAdd(View view){
+//        Intent intent = new Intent(this,AddCreditor.class);
+//        startActivity(intent);
+//
+//    }
 
 }

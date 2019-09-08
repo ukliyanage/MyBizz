@@ -32,13 +32,15 @@
     <!--    <string name="cleard_btn">CLEAR ALL</string>-->
 
 
-    <string name="txt_income">INCOMEE</string>
+    <string name="txt_income">INCOMEEe</string>
     <string name="txt_addincome">ADD INCOME</string>
     <string name="add_income_source"></string>
     <string name="add_income_date"></string>
     <string name="add_income_amount"></string>
     <string name="income_save_btn">SAVE INCOME</string>
     <string name="income_clear_btn">CLEAR ALL</string>
+    <string name="searchtxt">SEARCH</string>
+    <string name="hometxt">HOME</string>
 
 
 </resources>
