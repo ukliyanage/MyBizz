@@ -11,7 +11,5 @@ public class AddIncome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_income);
     }
-    public void inset(){
 
-    }
 }
