@@ -18,4 +18,9 @@ public class IncomeMainActivity extends AppCompatActivity {
         Intent intent=new Intent(this,AddIncome.class);
         startActivity(intent);
     }
+
+//    public void goanother(View view){
+//        Intent intent=new Intent(this,Main2Activity.class);
+//        startActivity(intent);
+//    }
 }

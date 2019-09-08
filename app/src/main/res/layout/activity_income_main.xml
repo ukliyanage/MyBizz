@@ -9,7 +9,7 @@
     tools:context=".IncomeMainActivity">
 
     <TextView
-        android:id="@+id/txt_addIncome"
+        android:id="@+id/txt_income"
         android:layout_width="243dp"
         android:layout_height="52dp"
         android:layout_marginStart="84dp"
@@ -17,7 +17,7 @@
         android:layout_marginTop="30dp"
         android:background="#52527a "
         android:cursorVisible="true"
-        android:text="INCOME"
+        android:text="@string/txt_income"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
@@ -82,7 +82,6 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
-                android:onClick="addIncomes"
                 android:orientation="vertical">
 
                 <ImageView
