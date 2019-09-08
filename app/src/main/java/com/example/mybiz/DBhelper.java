@@ -49,16 +49,16 @@ public class DBhelper extends SQLiteOpenHelper {
 
 //------------------add creditors------------
 
-    public void addInformation(String name, String phone, String amount, String data, SQLiteDatabase db){
-
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(Creditors.NewCreditorInfo.USER_NAME,name);
-        contentValues.put(Creditors.NewCreditorInfo.USER_PHONE,phone);
-        contentValues.put(Creditors.NewCreditorInfo.USER_AMOUNT,amount);
-        contentValues.put(Creditors.NewCreditorInfo.USER_DATE,data);
-        db.insert(Creditors.NewCreditorInfo.TABLE_NAME,null,contentValues);
-        Log.e("DATABASE OPERATIONS","One Row Inserted...");
-    }
+//    public void addInformation(String name, String phone, String amount, String data, SQLiteDatabase db){
+//
+//        ContentValues contentValues = new ContentValues();
+//        contentValues.put(Creditors.NewCreditorInfo.USER_NAME,name);
+//        contentValues.put(Creditors.NewCreditorInfo.USER_PHONE,phone);
+//        contentValues.put(Creditors.NewCreditorInfo.USER_AMOUNT,amount);
+//        contentValues.put(Creditors.NewCreditorInfo.USER_DATE,data);
+//        db.insert(Creditors.NewCreditorInfo.TABLE_NAME,null,contentValues);
+//        Log.e("DATABASE OPERATIONS","One Row Inserted...");
+//    }
 
 //---------------------add income-----------------
 

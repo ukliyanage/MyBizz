@@ -7,16 +7,17 @@
     android:background="#1f1f2e"
     tools:context=".AddIncome">
 
+
     <TextView
-        android:id="@+id/txt_addincome"
+        android:id="@+id/txt_addIncome"
         android:layout_width="273dp"
         android:layout_height="55dp"
         android:layout_marginStart="68dp"
         android:layout_marginLeft="68dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="30dp"
         android:background="#52527a "
         android:cursorVisible="true"
-        android:text="@string/txt_addincome"
+        android:text="@string/add_income"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
@@ -31,7 +32,7 @@
 
 
     <EditText
-        android:id="@+id/add_income_source"
+        android:id="@+id/income_add_source"
         android:layout_width="328dp"
         android:layout_height="43dp"
         android:layout_marginStart="40dp"
@@ -39,17 +40,17 @@
         android:layout_marginTop="172dp"
         android:background="#9595b7"
         android:ems="10"
-        android:hint="SOURCE"
+        android:hint="@string/source"
         android:inputType="textPersonName"
-        android:text="@string/add_income_source"
         android:textColor="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <EditText
-        android:id="@+id/add_income_date"
+        android:id="@+id/income_add_date"
         android:layout_width="328dp"
         android:layout_height="43dp"
         android:layout_marginStart="40dp"
@@ -57,18 +58,16 @@
         android:layout_marginTop="236dp"
         android:background="#9595b7"
         android:ems="10"
-        android:hint="DD/MM/YY"
-        android:inputType="text"
-        android:text="@string/add_income_date"
+        android:hint="@string/dd_mm_yy"
+        android:inputType="date"
         android:textColor="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <EditText
-        android:id="@+id/add_income_amount"
+        android:id="@+id/income_add_amount"
         android:layout_width="328dp"
         android:layout_height="43dp"
         android:layout_marginStart="40dp"
@@ -76,9 +75,8 @@
         android:layout_marginTop="304dp"
         android:background="#9595b7"
         android:ems="10"
-        android:hint="Amount"
+        android:hint="@string/amount"
         android:inputType="text"
-        android:text="@string/add_income_amount"
         android:textColor="@android:color/background_light"
         android:textColorHint="@android:color/background_light"
         android:textSize="24sp"
@@ -95,18 +93,19 @@
         android:layout_marginLeft="84dp"
         android:layout_marginTop="376dp"
         android:background="#52527a "
+        android:onClick="addIncome"
         android:shadowColor="#00706767"
-        android:text="@string/income_save_btn"
+        android:text="@string/save_btn"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
         android:textColorHint="@android:color/darker_gray"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="ADD INCOME" />
+        tools:text="SAVE DETAILS" />
 
     <Button
-        android:id="@+id/income_clear_btn"
+        android:id="@+id/income_cancel_btn"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="243dp"
         android:layout_height="44dp"
@@ -114,15 +113,16 @@
         android:layout_marginLeft="84dp"
         android:layout_marginTop="440dp"
         android:background="#52527a "
+        android:onClick="clearControls"
         android:shadowColor="#00706767"
-        android:text="@string/income_clear_btn"
+        android:text="@string/cancel_btn"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
         android:textColorHint="@android:color/darker_gray"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="CLEAR ALL" />
+        tools:text="CANCEL ALL" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
