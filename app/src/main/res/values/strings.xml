@@ -5,12 +5,20 @@
     <string name="txt_creditor">CREDITORS</string>
 
     <string name="txt_addcreditor">ADD CREDITORS</string>
-    <string name="add_name"></string>
-    <string name="add_phone"></string>
-    <string name="add_amount"></string>
-    <string name="add_date"></string>
-    <string name="save_btn">SAVE DETAILS</string>
-    <string name="cancel_btn">CANCEL ALL</string>
+    <string name="add_namec"></string>
+    <string name="add_phonec"></string>
+    <string name="add_amountc"></string>
+    <string name="add_datec"></string>
+    <string name="savec_btn">SAVE DETAILS</string>
+    <string name="clearc_btn">CLEAR ALL</string>
+
+    <string name="txt_adddebitor">ADD DEBITORS</string>
+    <string name="add_named"></string>
+    <string name="add_phoned"></string>
+    <string name="add_amountd"></string>
+    <string name="add_dated"></string>
+    <string name="saved_btn">SAVE DETAILS</string>
+    <string name="cleard_btn">CLEAR ALL</string>
 
 
     <string name="txt_income">txt_income</string>
@@ -23,5 +31,6 @@
     <string name="source">Source</string>
     <string name="dd_mm_yy">DD/MM/YY</string>
     <string name="amount">Amount</string>
+
 
 </resources>

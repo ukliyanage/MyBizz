@@ -33,10 +33,10 @@ public class AddCreditor extends AppCompatActivity {
 //        actionBar = getSupportActionBar();
 //        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000080")));
 
-        name = findViewById(R.id.add_name);
-        phone = findViewById(R.id.add_phone);
-        amount = findViewById(R.id.add_amount);
-        date = findViewById(R.id.add_date);
+//        name = findViewById(R.id.add_name);
+//        phone = findViewById(R.id.add_phone);
+//        amount = findViewById(R.id.add_amount);
+//        date = findViewById(R.id.add_date);
 
     }
 
