@@ -82,6 +82,7 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
+                android:onClick="addIncomes"
                 android:orientation="vertical">
 
                 <ImageView
