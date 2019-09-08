@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">MyBiz</string>
+
     <string name="add_btn">Add Creditor</string>
     <string name="view_btn">View Creditor</string>
     <string name="txt_creditor">CREDITORS</string>
@@ -13,15 +14,17 @@
     <string name="cancel_btn">CANCEL ALL</string>
 
 
-    <string name="txt_income">txt_income</string>
-    <string name="txt_addincome">addincome</string>
-    <string name="add_source">add_source</string>
-    <string name="add_income_amount">add_income_amount</string>
-    <string name="add_income_date">add_income_date</string>
+    <string name="txt_income">INCOME</string>
+    <string name="txt_addincome">ADD INCOME</string>
+    <string name="add_source">Source</string>
+    <string name="add_income_amount">Amount</string>
+    <string name="add_income_date">Date</string>
     <string name="name">Name</string>
     <string name="add_income">ADD INCOME</string>
     <string name="source">Source</string>
     <string name="dd_mm_yy">DD/MM/YY</string>
     <string name="amount">Amount</string>
+    <string name="income_save_btn">SAVE DETAILS</string>
+    <string name="income_cancel_btn">CANCEL ALL</string>
 
 </resources>
