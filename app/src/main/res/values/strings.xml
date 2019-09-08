@@ -18,5 +18,10 @@
     <string name="add_source">add_source</string>
     <string name="add_income_amount">add_income_amount</string>
     <string name="add_income_date">add_income_date</string>
+    <string name="name">Name</string>
+    <string name="add_income">ADD INCOME</string>
+    <string name="source">Source</string>
+    <string name="dd_mm_yy">DD/MM/YY</string>
+    <string name="amount">Amount</string>
 
 </resources>
