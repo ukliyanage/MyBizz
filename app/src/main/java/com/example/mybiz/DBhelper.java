@@ -72,15 +72,15 @@ public class DBhelper extends SQLiteOpenHelper {
         Log.e("DATABASE_OPERATIONS","One row is inserted...");
     }
 
-//    public Cursor getInformations(SQLiteDatabase db){
-//        Cursor cursor;
-//        String[] projections={Income.NewIncomeInfo.INCOME_DATE,
-//                Income.NewIncomeInfo.SOURCE,
-//                Income.NewIncomeInfo.INCOME_AMOUNT };
-//        cursor=db.query(Income.NewIncomeInfo.TABLE_NAME,projections,null,null,
-//                null,null,null);
-//        return cursor;
-//    }
+    public Cursor getInformations(SQLiteDatabase db){
+        Cursor cursor;
+        String[] projections={Income.NewIncomeInfo.INCOME_DATE,
+                Income.NewIncomeInfo.SOURCE,
+                Income.NewIncomeInfo.INCOME_AMOUNT };
+        cursor=db.query(Income.NewIncomeInfo.TABLE_NAME,projections,null,null,
+                null,null,null);
+        return cursor;
+    }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
