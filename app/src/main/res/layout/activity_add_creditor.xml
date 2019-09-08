@@ -95,7 +95,7 @@
         android:layout_marginTop="368dp"
         android:background="#9595b7"
         android:ems="10"
-        android:hint="Date"
+        android:hint="MM/DD/YYYY"
         android:inputType="date"
         android:text="@string/add_date"
         android:textColor="@android:color/background_light"
