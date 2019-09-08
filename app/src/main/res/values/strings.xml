@@ -15,16 +15,6 @@
 
 
     <string name="txt_income">INCOME</string>
-    <string name="txt_addincome">ADD INCOME</string>
-    <string name="add_source">Source</string>
-    <string name="add_income_amount">Amount</string>
-    <string name="add_income_date">Date</string>
-    <string name="name">Name</string>
-    <string name="add_income">ADD INCOME</string>
-    <string name="source">Source</string>
-    <string name="dd_mm_yy">DD/MM/YY</string>
-    <string name="amount">Amount</string>
-    <string name="income_save_btn">SAVE DETAILS</string>
-    <string name="income_cancel_btn">CANCEL ALL</string>
+
 
 </resources>
