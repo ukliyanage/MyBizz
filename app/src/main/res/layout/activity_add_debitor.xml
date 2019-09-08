@@ -9,7 +9,7 @@ tools:context=".AddDebitor">
 
 
 <TextView
-    android:id="@+id/txt_addcreditor"
+    android:id="@+id/txt_adddebitor"
     android:layout_width="273dp"
     android:layout_height="55dp"
     android:layout_marginStart="68dp"
@@ -17,7 +17,7 @@ tools:context=".AddDebitor">
     android:layout_marginTop="48dp"
     android:background="#52527a "
     android:cursorVisible="true"
-    android:text="@string/txt_addcreditor"
+    android:text="@string/txt_adddebitor"
     android:textAlignment="center"
     android:textColor="@android:color/background_light"
     android:textColorHighlight="@android:color/background_light"
@@ -32,7 +32,7 @@ tools:context=".AddDebitor">
 
 
 <EditText
-    android:id="@+id/add_name"
+    android:id="@+id/add_named"
     android:layout_width="328dp"
     android:layout_height="43dp"
     android:layout_marginStart="40dp"
@@ -42,7 +42,7 @@ tools:context=".AddDebitor">
     android:ems="10"
     android:hint="Name"
     android:inputType="textPersonName"
-    android:text="@string/add_name"
+    android:text="@string/add_named"
     android:textColor="@android:color/background_light"
     android:textColorHint="@android:color/background_light"
     android:textSize="24sp"
@@ -50,7 +50,7 @@ tools:context=".AddDebitor">
     app:layout_constraintTop_toTopOf="parent" />
 
 <EditText
-    android:id="@+id/add_phone"
+    android:id="@+id/add_phoned"
     android:layout_width="328dp"
     android:layout_height="43dp"
     android:layout_marginStart="40dp"
@@ -60,7 +60,7 @@ tools:context=".AddDebitor">
     android:ems="10"
     android:hint="Phone Number"
     android:inputType="text"
-    android:text="@string/add_phone"
+    android:text="@string/add_phoned"
     android:textColor="@android:color/background_light"
     android:textColorHint="@android:color/background_light"
     android:textSize="24sp"
@@ -69,7 +69,7 @@ tools:context=".AddDebitor">
 
 
 <EditText
-    android:id="@+id/add_amount"
+    android:id="@+id/add_amountd"
     android:layout_width="328dp"
     android:layout_height="43dp"
     android:layout_marginStart="40dp"
@@ -79,7 +79,7 @@ tools:context=".AddDebitor">
     android:ems="10"
     android:hint="Amount"
     android:inputType="text"
-    android:text="@string/add_amount"
+    android:text="@string/add_amountd"
     android:textColor="@android:color/background_light"
     android:textColorHint="@android:color/background_light"
     android:textSize="24sp"
@@ -87,7 +87,7 @@ tools:context=".AddDebitor">
     app:layout_constraintTop_toTopOf="parent" />
 
 <EditText
-    android:id="@+id/add_date"
+    android:id="@+id/add_dated"
     android:layout_width="328dp"
     android:layout_height="43dp"
     android:layout_marginStart="40dp"
@@ -97,7 +97,7 @@ tools:context=".AddDebitor">
     android:ems="10"
     android:hint="MM/DD/YYYY"
     android:inputType="date"
-    android:text="@string/add_date"
+    android:text="@string/add_dated"
     android:textColor="@android:color/background_light"
     android:textColorHint="@android:color/background_light"
     android:textSize="24sp"
@@ -105,7 +105,7 @@ tools:context=".AddDebitor">
     app:layout_constraintTop_toTopOf="parent" />
 
 <Button
-    android:id="@+id/save_btn"
+    android:id="@+id/saved_btn"
     style="@style/Widget.AppCompat.Button"
     android:layout_width="243dp"
     android:layout_height="44dp"
@@ -114,7 +114,7 @@ tools:context=".AddDebitor">
     android:layout_marginTop="476dp"
     android:background="#52527a "
     android:shadowColor="#00706767"
-    android:text="@string/save_btn"
+    android:text="@string/saved_btn"
     android:textColor="@android:color/background_light"
     android:textColorHighlight="@android:color/background_light"
     android:textColorHint="@android:color/darker_gray"
@@ -124,7 +124,7 @@ tools:context=".AddDebitor">
     tools:text="SAVE DETAILS" />
 
 <Button
-    android:id="@+id/cancel_btn"
+    android:id="@+id/cleard_btn"
     style="@style/Widget.AppCompat.Button"
     android:layout_width="243dp"
     android:layout_height="44dp"
@@ -133,14 +133,14 @@ tools:context=".AddDebitor">
     android:layout_marginTop="540dp"
     android:background="#52527a "
     android:shadowColor="#00706767"
-    android:text="@string/cancel_btn"
+    android:text="@string/cleard_btn"
     android:textColor="@android:color/background_light"
     android:textColorHighlight="@android:color/background_light"
     android:textColorHint="@android:color/darker_gray"
     android:textSize="18sp"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    tools:text="CANCEL ALL" />
+    tools:text="CLEAR ALL" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
