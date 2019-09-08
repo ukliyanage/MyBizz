@@ -14,10 +14,10 @@ public class IncomeMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_income_main);
     }
 
-    public void addIncomes(View view){
-        Intent intent=new Intent(this,AddIncome.class);
-        startActivity(intent);
-    }
+//    public void addIncomes(View view){
+//        Intent intent=new Intent(this,AddIncome.class);
+//        startActivity(intent);
+//    }
 
 //    public void goanother(View view){
 //        Intent intent=new Intent(this,Main2Activity.class);
