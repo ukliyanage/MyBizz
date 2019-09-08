@@ -28,18 +28,23 @@ public class DBhelper extends SQLiteOpenHelper {
                 Income.NewIncomeInfo.SOURCE+" TEXT,"+
                 Income.NewIncomeInfo.INCOME_AMOUNT+" TEXT);";
 
-
     public DBhelper(Context context) {
 
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
         Log.e("DATABASE OPERATIONS","Database created / opened...");
     }
 
+
+
+
     @Override
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL(CREATE_QUERY);
-        Log.e("DATABASE OPERATIONS","Table Created...");
+        Log.e("DATABASE OPERATIONS","Creditor Table Created...");
+
+        db.execSQL(CREATE_QUERY1);
+        Log.e("DATABASE OPERATIONS","Income Table Created...");
     }
 
 //------------------add creditors------------
@@ -57,10 +62,10 @@ public class DBhelper extends SQLiteOpenHelper {
 
 //---------------------add income-----------------
 
-    public void addIncomeInfo(String date,String source, String amount,SQLiteDatabase db){
+    public void addIncomeInfo(String source,String date, String amount,SQLiteDatabase db){
         ContentValues contentValues=new ContentValues();
-        contentValues.put(Income.NewIncomeInfo.INCOME_DATE,date);
         contentValues.put(Income.NewIncomeInfo.SOURCE,source);
+        contentValues.put(Income.NewIncomeInfo.INCOME_DATE,date);
         contentValues.put(Income.NewIncomeInfo.INCOME_AMOUNT,amount);
         db.insert(Income.NewIncomeInfo.TABLE_NAME,null,contentValues);
         Log.e("DATABASE_OPERATIONS","One row is inserted...");

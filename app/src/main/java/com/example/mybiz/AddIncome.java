@@ -24,9 +24,9 @@ public class AddIncome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_income);
 
-        IncomeSource=(EditText)findViewById(R.id.add_source);
-        IncomeDate=(EditText)findViewById(R.id.add_date);
-        IncomeAmount=(EditText)findViewById(R.id.add_amount);
+        IncomeSource=(EditText)findViewById(R.id.income_add_source);
+        IncomeDate=(EditText)findViewById(R.id.income_add_date);
+        IncomeAmount=(EditText)findViewById(R.id.income_add_amount);
 
 
 
