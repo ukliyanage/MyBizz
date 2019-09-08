@@ -3,6 +3,7 @@
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.ContentObservable;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -70,6 +71,16 @@ public class DBhelper extends SQLiteOpenHelper {
         db.insert(Income.NewIncomeInfo.TABLE_NAME,null,contentValues);
         Log.e("DATABASE_OPERATIONS","One row is inserted...");
     }
+
+//    public Cursor getInformations(SQLiteDatabase db){
+//        Cursor cursor;
+//        String[] projections={Income.NewIncomeInfo.INCOME_DATE,
+//                Income.NewIncomeInfo.SOURCE,
+//                Income.NewIncomeInfo.INCOME_AMOUNT };
+//        cursor=db.query(Income.NewIncomeInfo.TABLE_NAME,projections,null,null,
+//                null,null,null);
+//        return cursor;
+//    }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {

@@ -27,7 +27,7 @@
         app:fontFamily="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="ADD INCOMEEe" />
+        tools:text="ADD INCOME" />
 
 
     <EditText
@@ -95,6 +95,7 @@
         android:layout_marginLeft="84dp"
         android:layout_marginTop="376dp"
         android:background="#52527a "
+        android:onClick="addIncome"
         android:shadowColor="#00706767"
         android:text="@string/income_save_btn"
         android:textColor="@android:color/background_light"
@@ -114,6 +115,7 @@
         android:layout_marginLeft="84dp"
         android:layout_marginTop="440dp"
         android:background="#52527a "
+        android:onClick="clearContols"
         android:shadowColor="#00706767"
         android:text="@string/income_clear_btn"
         android:textColor="@android:color/background_light"
