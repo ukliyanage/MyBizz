@@ -22,11 +22,11 @@ public class DBhelper extends SQLiteOpenHelper {
                     Creditors.NewCreditorInfo.USER_DATE+" TEXT);";
 
 //-----------------INCOME TABLE--------------------
-//    private static final String CREATE_QUERY1 =
-//        "CREATE TABLE "+ Income.NewIncomeInfo.TABLE_NAME+"("+
-//                Income.NewIncomeInfo.INCOME_DATE+" TEXT,"+
-//                Income.NewIncomeInfo.SOURCE+" TEXT,"+
-//                Income.NewIncomeInfo.INCOME_AMOUNT+" TEXT);";
+    private static final String CREATE_QUERY1 =
+        "CREATE TABLE "+ Income.NewIncomeInfo.TABLE_NAME+"("+
+                Income.NewIncomeInfo.INCOME_DATE+" TEXT,"+
+                Income.NewIncomeInfo.SOURCE+" TEXT,"+
+                Income.NewIncomeInfo.INCOME_AMOUNT+" TEXT);";
 
     public DBhelper(Context context) {
 
@@ -43,8 +43,8 @@ public class DBhelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_QUERY);
         Log.e("DATABASE OPERATIONS","Creditor Table Created...");
 
-//        db.execSQL(CREATE_QUERY1);
-//        Log.e("DATABASE OPERATIONS","Income Table Created...");
+        db.execSQL(CREATE_QUERY1);
+        Log.e("DATABASE OPERATIONS","Income Table Created...");
     }
 
 //------------------add creditors------------
@@ -62,14 +62,14 @@ public class DBhelper extends SQLiteOpenHelper {
 
 //---------------------add income-----------------
 
-//    public void addIncomeInfo(String source,String date, String amount,SQLiteDatabase db){
-//        ContentValues contentValues=new ContentValues();
-//        contentValues.put(Income.NewIncomeInfo.SOURCE,source);
-//        contentValues.put(Income.NewIncomeInfo.INCOME_DATE,date);
-//        contentValues.put(Income.NewIncomeInfo.INCOME_AMOUNT,amount);
-//        db.insert(Income.NewIncomeInfo.TABLE_NAME,null,contentValues);
-//        Log.e("DATABASE_OPERATIONS","One row is inserted...");
-//    }
+    public void addIncomeInfo(String source,String date, String amount,SQLiteDatabase db){
+        ContentValues contentValues=new ContentValues();
+        contentValues.put(Income.NewIncomeInfo.SOURCE,source);
+        contentValues.put(Income.NewIncomeInfo.INCOME_DATE,date);
+        contentValues.put(Income.NewIncomeInfo.INCOME_AMOUNT,amount);
+        db.insert(Income.NewIncomeInfo.TABLE_NAME,null,contentValues);
+        Log.e("DATABASE_OPERATIONS","One row is inserted...");
+    }
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
