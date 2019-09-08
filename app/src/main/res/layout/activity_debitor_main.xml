@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
@@ -51,7 +52,6 @@ tools:context=".DebitorMainActivity">
             android:layout_height="match_parent"
             android:background="#52527a"
             android:gravity="center"
-            android:onClick="pressAdd"
             android:orientation="vertical">
 
             <ImageView
@@ -59,15 +59,16 @@ tools:context=".DebitorMainActivity">
                 android:layout_height="64dp"
                 android:background="#9595b7"
                 android:padding="10dp"
-                android:src="@drawable/ic_add_circle_outline_black_24dp" />
+                android:src="@drawable/ic_add_circle_outline_black_24dp"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="ADD DEBITOR"
                 android:textColor="@color/cardview_light_background"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="ADD DEBITOR" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -90,7 +91,8 @@ tools:context=".DebitorMainActivity">
                 android:layout_height="64dp"
                 android:background="#9595b7"
                 android:padding="10dp"
-                android:src="@drawable/ic_view_carousel_black_24dp" />
+                android:src="@drawable/ic_view_carousel_black_24dp"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -129,16 +131,18 @@ tools:context=".DebitorMainActivity">
                 android:layout_height="64dp"
                 android:background="#9595b7"
                 android:padding="10dp"
-                android:src="@drawable/ic_search_black_24dp" />
+                android:src="@drawable/ic_search_black_24dp"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:text="SEARCH"
+                android:text="@string/searchtxt"
                 android:textColor="@color/cardview_light_background"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="@string/searchtxt" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
@@ -161,7 +165,8 @@ tools:context=".DebitorMainActivity">
                 android:layout_height="64dp"
                 android:background="#9595b7"
                 android:padding="10dp"
-                android:src="@drawable/ic_system_update_alt_black_24dp" />
+                android:src="@drawable/ic_system_update_alt_black_24dp"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -200,7 +205,8 @@ tools:context=".DebitorMainActivity">
                 android:layout_height="64dp"
                 android:background="#9595b7"
                 android:padding="10dp"
-                android:src="@drawable/ic_delete_black_24dp" />
+                android:src="@drawable/ic_delete_black_24dp"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -232,15 +238,17 @@ tools:context=".DebitorMainActivity">
                 android:layout_height="64dp"
                 android:background="#9595b7"
                 android:padding="10dp"
-                android:src="@drawable/ic_home_black_24dp" />
+                android:src="@drawable/ic_home_black_24dp"
+                android:contentDescription="TODO" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="HOME"
+                android:text="@string/hometxt"
                 android:textColor="@color/cardview_light_background"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="@string/hometxt" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
