@@ -8,14 +8,10 @@
     <string name="txt_debitor">DEBITORS</string>
 
 
-<!--    bskvj-->
+    <!--    bskvj-->
     <string name="home_c">CREDITORS</string>
 
     <string name="home_d">DEBITORS</string>
-
-
-
-
 
 
     <string name="txt_addcreditor">ADD CREDITORS</string>
@@ -27,30 +23,22 @@
     <string name="clearc_btn">CLEAR ALL</string>
 
 
-
-
-
-
-<!--    <string name="txt_adddebitor">ADD DEBITORS</string>-->
-<!--    <string name="add_named"></string>-->
-<!--    <string name="add_phoned"></string>-->
-<!--    <string name="add_amountd"></string>-->
-<!--    <string name="add_dated"></string>-->
-<!--    <string name="saved_btn">SAVE DETAILS</string>-->
-<!--    <string name="cleard_btn">CLEAR ALL</string>-->
+    <!--    <string name="txt_adddebitor">ADD DEBITORS</string>-->
+    <!--    <string name="add_named"></string>-->
+    <!--    <string name="add_phoned"></string>-->
+    <!--    <string name="add_amountd"></string>-->
+    <!--    <string name="add_dated"></string>-->
+    <!--    <string name="saved_btn">SAVE DETAILS</string>-->
+    <!--    <string name="cleard_btn">CLEAR ALL</string>-->
 
 
     <string name="txt_income">INCOME</string>
-
     <string name="txt_addincome">ADD INCOME</string>
     <string name="add_income_source"></string>
     <string name="add_income_date"></string>
     <string name="add_income_amount"></string>
-    <string name="income_save_btn">ADD INCOME</string>
+    <string name="income_save_btn">SAVE INCOME</string>
     <string name="income_clear_btn">CLEAR ALL</string>
-
-
-
 
 
 </resources>
