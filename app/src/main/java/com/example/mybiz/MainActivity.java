@@ -1,16 +1,10 @@
 package com.example.mybiz;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.solver.widgets.WidgetContainer;
-
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,20 +19,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void pressAdd(View view){
-        Intent intent = new Intent(this,AddCreditor.class);
+        Intent intent = new Intent(this, AddCreditor.class);
         startActivity(intent);
 
     }
 
-
     public void viewCreditors(View view){
-        Intent intent = new Intent(this,ListCreditors.class);
+        Intent intent = new Intent(this, ListCreditors.class);
         startActivity(intent);
     }
 
 
     public void searchCreditors(View view){
-        Intent intent = new Intent(this,SearchCreditor.class);
+        Intent intent = new Intent(this, SearchCreditor.class);
         startActivity(intent);
     }
 

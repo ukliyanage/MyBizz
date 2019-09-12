@@ -11,8 +11,10 @@
         tools:context=".MainActivity">
 
 
-        <TextView
-        android:id="@+id/txt_creditor"
+
+
+    <TextView
+        android:id="@+id/txt_addcreditor"
         android:layout_width="243dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
@@ -31,7 +33,7 @@
         app:fontFamily="serif"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-            tools:text="CREDITORS" />
+        tools:text="CREDITORS" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,8 +53,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#52527a"
-                android:onClick="pressAdd"
                 android:gravity="center"
+                android:onClick="pressAdd"
                 android:orientation="vertical">
 
                 <ImageView

@@ -1,11 +1,11 @@
 package com.example.mybiz;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ListCreditors extends AppCompatActivity {
 
@@ -24,7 +24,7 @@ public class ListCreditors extends AppCompatActivity {
 
         dBhelper = new DBhelper(getApplicationContext());
         sqLiteDatabase = dBhelper.getReadableDatabase();
-        listCreditorAdaptor = new ListCreditorAdaptor(getApplicationContext(),R.layout.crow_layout);
+        listCreditorAdaptor = new ListCreditorAdaptor(getApplicationContext(), R.layout.crow_layout);
         listView.setAdapter(listCreditorAdaptor);
 
         cursor = dBhelper.getCreditors(sqLiteDatabase);
