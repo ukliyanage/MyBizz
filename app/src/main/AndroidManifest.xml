@@ -14,8 +14,13 @@
         <activity android:name=".SearchIncomeActivity" />
         <activity android:name=".ViewIncomeActivity" />
         <activity android:name=".ActivityAddIncome" />
+        <activity android:name=".UpdateCreditors"></activity>
+        <activity android:name=".SearchCreditor" />
+        <activity android:name=".ListCreditors" />
+        <activity android:name=".AddIncome" />
         <activity android:name=".MainActivity" />
         <activity android:name=".IncomeMainActivity" />
+        <activity android:name=".AddCreditor" />
         <activity android:name=".HOME">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

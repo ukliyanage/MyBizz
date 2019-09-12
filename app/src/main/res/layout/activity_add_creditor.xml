@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1f2e"
+    tools:context=".AddCreditor">
+
+
+    <TextView
+        android:id="@+id/txt_addcreditor"
+        android:layout_width="273dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="48dp"
+        android:background="#52527a "
+        android:cursorVisible="true"
+        android:text="@string/txt_addcreditor"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/background_light"
+        android:textCursorDrawable="@android:drawable/alert_light_frame"
+        android:textSize="30sp"
+        app:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ADD CREDITORS" />
+
+
+    <EditText
+        android:id="@+id/add_namec"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="172dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:text="@string/add_namec"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_phonec"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="236dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="text"
+        android:text="@string/add_phonec"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/add_amountc"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="304dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="text"
+        android:text="@string/add_amountc"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/add_datec"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="368dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="MM/DD/YYYY"
+        android:inputType="date"
+        android:text="@string/add_datec"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/savec_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="243dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="476dp"
+        android:background="#52527a "
+        android:onClick="addCreditor"
+        android:shadowColor="#00706767"
+        android:text="@string/savec_btn"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="SAVE DETAILS" />
+
+    <Button
+        android:id="@+id/clearc_btn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="243dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="540dp"
+        android:background="#52527a "
+        android:onClick="clearAll"
+        android:shadowColor="#00706767"
+        android:text="@string/clearc_btn"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="CLEAR ALL" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

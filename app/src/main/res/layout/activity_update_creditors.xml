@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1f2e"
+    tools:context=".UpdateCreditors">
+
+
+    <TextView
+        android:id="@+id/txt_updatecreditor"
+        android:layout_width="273dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="48dp"
+        android:background="#52527a "
+        android:cursorVisible="true"
+        android:text="@string/txt_updatec"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/background_light"
+        android:textCursorDrawable="@android:drawable/alert_light_frame"
+        android:textSize="30sp"
+        app:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="UPDATE DETAILS" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/supdatetxt"
+            android:layout_width="272dp"
+            android:layout_height="38dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="169dp"
+            android:background="#9595b7"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="24sp"
+            tools:text="@string/supdatetxt" />
+
+        <ImageView
+            android:id="@+id/supdatec_img"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="169dp"
+            android:background="#9595b7"
+            android:onClick="searchCreditor"
+            android:padding="10dp"
+            android:src="@drawable/ic_search_black_24dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/update_name"
+            android:hint="NAME HERE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="250dp"
+            android:background="#9595b7"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/update_phone"
+            android:hint="PHONE HERE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#9595b7"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/update_amount"
+            android:hint="CHANGE AMOUNT"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#9595b7"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:id="@+id/update_date"
+            android:hint="DATE HERE"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="33dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="#9595b7"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="490dp"
+        android:background="#52527a"
+        android:gravity="center"
+        android:onClick="updatecreditor"
+        android:text="@string/btn_update"
+        android:textSize="24dp" />
+
+
+    <Button
+        android:id="@+id/btn_searchback"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="490dp"
+        android:background="#52527a"
+        android:gravity="center"
+        android:onClick="backhome"
+        android:text="@string/btn_updateback"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
