@@ -24,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void pressAdd(View view){
+        Intent intent = new Intent(this,AddCreditor.class);
+        startActivity(intent);
+
+    }
 
 
     public void viewCreditors(View view){
