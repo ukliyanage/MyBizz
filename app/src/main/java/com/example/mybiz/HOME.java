@@ -25,10 +25,11 @@ public class HOME extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goDebitors(View view){
-        Intent intent=new Intent(this,DebitorMainActivity.class);
-        startActivity(intent);
-    }
+
+//    public void goDebitors(View view){
+//        Intent intent=new Intent(this,DebitorMainActivity.class);
+//        startActivity(intent);
+//    }
 
 
 }

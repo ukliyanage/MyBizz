@@ -22,14 +22,19 @@
     <string name="savec_btn">SAVE DETAILS</string>
     <string name="clearc_btn">CLEAR ALL</string>
 
+    <string name="txt_searchc">SEARCH HERE</string>
+    <string name="searchtxtc"></string>
+    <string name="btn_searchback">BACK </string>
+    <string name="btn_dlt">DELETE </string>
 
-    <!--    <string name="txt_adddebitor">ADD DEBITORS</string>-->
-    <!--    <string name="add_named"></string>-->
-    <!--    <string name="add_phoned"></string>-->
-    <!--    <string name="add_amountd"></string>-->
-    <!--    <string name="add_dated"></string>-->
-    <!--    <string name="saved_btn">SAVE DETAILS</string>-->
-    <!--    <string name="cleard_btn">CLEAR ALL</string>-->
+    <string name="txt_updatec">UPDATE DETAILS</string>
+    <string name="supdatetxt"></string>
+    <string name="update_name"></string>
+    <string name="btn_updateback">BACK </string>
+    <string name="btn_update">UPDATE</string>
+
+
+
 
 
     <string name="txt_income">INCOME</string>

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AddIncome"></activity>
+        <activity android:name=".UpdateCreditors"></activity>
+        <activity android:name=".SearchCreditor" />
+        <activity android:name=".ListCreditors" />
+        <activity android:name=".AddIncome" />
         <activity android:name=".MainActivity" />
         <activity android:name=".IncomeMainActivity" />
         <activity android:name=".AddCreditor" />

@@ -30,5 +30,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void viewCreditors(View view){
+        Intent intent = new Intent(this,ListCreditors.class);
+        startActivity(intent);
+    }
+
+
+    public void searchCreditors(View view){
+        Intent intent = new Intent(this,SearchCreditor.class);
+        startActivity(intent);
+    }
+
+    public void dltCreditors(View view) {
+        Intent intent = new Intent(this, SearchCreditor.class);
+        startActivity(intent);
+    }
+
+    public void updtCreditors(View view) {
+        Intent intent = new Intent(this, UpdateCreditors.class);
+        startActivity(intent);
+    }
+
 
 }

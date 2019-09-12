@@ -16,7 +16,6 @@ import android.widget.Toast;
 
 public class AddCreditor extends AppCompatActivity {
 
-//    ActionBar actionBar;
     EditText name,phone,amount,date;
     Context context = this;
     DBhelper dBhelper;
@@ -30,30 +29,37 @@ public class AddCreditor extends AppCompatActivity {
 
         Intent secondIntent = getIntent();
 
-//        actionBar = getSupportActionBar();
-//        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#000080")));
-
-//        name = findViewById(R.id.add_name);
-//        phone = findViewById(R.id.add_phone);
-//        amount = findViewById(R.id.add_amount);
-//        date = findViewById(R.id.add_date);
+        name    = findViewById(R.id.add_namec);
+        phone   = findViewById(R.id.add_phonec);
+        amount  = findViewById(R.id.add_amountc);
+        date    = findViewById(R.id.add_datec);
 
     }
 
 
     public void addCreditor(View view) {
 
-        String creditorname     = name.getText().toString();
-        String creditorphone    = phone.getText().toString();
-        String creditoramount   = amount.getText().toString();
-        String creditordate     = amount.getText().toString();
+        String cname     = name.getText().toString();
+        String cphone    = phone.getText().toString();
+        String camount   = amount.getText().toString();
+        String cdate     = date.getText().toString();
 
-        dBhelper    = new DBhelper(context);
+        dBhelper         = new DBhelper(context);
         sqLiteDatabase  = dBhelper.getWritableDatabase();
 
+        dBhelper.addCreditorInfo(cname,cphone,camount,cdate,sqLiteDatabase);
+
         Toast.makeText(getBaseContext(),"Data Saved",Toast.LENGTH_LONG).show();
+
         dBhelper.close();
 
+    }
+
+    public void clearAll(View view){
+        name.setText("");
+        phone.setText("");
+        amount.setText("");
+        date.setText("");
     }
 
 

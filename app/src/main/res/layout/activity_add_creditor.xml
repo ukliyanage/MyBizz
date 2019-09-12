@@ -113,6 +113,7 @@
         android:layout_marginLeft="84dp"
         android:layout_marginTop="476dp"
         android:background="#52527a "
+        android:onClick="addCreditor"
         android:shadowColor="#00706767"
         android:text="@string/savec_btn"
         android:textColor="@android:color/background_light"
@@ -132,6 +133,7 @@
         android:layout_marginLeft="84dp"
         android:layout_marginTop="540dp"
         android:background="#52527a "
+        android:onClick="clearAll"
         android:shadowColor="#00706767"
         android:text="@string/clearc_btn"
         android:textColor="@android:color/background_light"
@@ -140,7 +142,7 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="CANCEL ALL" />
+        tools:text="CLEAR ALL" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
