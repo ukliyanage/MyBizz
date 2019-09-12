@@ -1,46 +1,18 @@
 <resources>
     <string name="app_name">MyBiz</string>
 
-    <string name="add_btn">Add Creditor</string>
-    <string name="view_btn">View Creditor</string>
-    <string name="txt_creditor">CREDITORS</string>
-
-    <string name="txt_debitor">DEBITORS</string>
-
-
-    <!--    bskvj-->
-    <string name="home_c">CREDITORS</string>
-
-    <string name="home_d">DEBITORS</string>
-
-
-    <string name="txt_addcreditor">ADD CREDITORS</string>
-    <string name="add_namec"></string>
-    <string name="add_phonec"></string>
-    <string name="add_amountc"></string>
-    <string name="add_datec"></string>
-    <string name="savec_btn">SAVE DETAILS</string>
-    <string name="clearc_btn">CLEAR ALL</string>
-
-
-    <!--    <string name="txt_adddebitor">ADD DEBITORS</string>-->
-    <!--    <string name="add_named"></string>-->
-    <!--    <string name="add_phoned"></string>-->
-    <!--    <string name="add_amountd"></string>-->
-    <!--    <string name="add_dated"></string>-->
-    <!--    <string name="saved_btn">SAVE DETAILS</string>-->
-    <!--    <string name="cleard_btn">CLEAR ALL</string>-->
-
-
     <string name="txt_income">INCOME</string>
-    <string name="txt_addincome">ADD INCOME</string>
+
+    <string name="txt_add_income">ADD INCOME</string>
     <string name="add_income_source"></string>
     <string name="add_income_date"></string>
     <string name="add_income_amount"></string>
-    <string name="income_save_btn">SAVE INCOME</string>
-    <string name="income_clear_btn">CLEAR ALL</string>
-    <string name="searchtxt">SEARCH</string>
-    <string name="hometxt">HOME</string>
+    <string name="save_income_btn">SAVE DETAILS</string>
+    <string name="clear_income_btn">CLEAR ALL</string>
+    <string name="txt_update_income">UPDATE INCOME</string>
+    <string name="update_income_source"></string>
+    <string name="update_income_date"></string>
+    <string name="update_income_amount"></string>
 
 
 </resources>

@@ -22,7 +22,6 @@
         android:layout_marginTop="30dp"
         android:background="#52527a "
         android:cursorVisible="true"
-        android:text="@string/txt_creditor"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
@@ -54,7 +53,6 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
-                android:onClick="pressAdd"
                 android:orientation="vertical">
 
                 <ImageView

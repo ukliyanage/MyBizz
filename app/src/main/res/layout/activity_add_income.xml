@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1f1f2e"
-    tools:context=".AddIncome">
+    tools:context=".ActivityAddIncome">
 
     <TextView
-        android:id="@+id/txt_addincome"
+        android:id="@+id/txt_add_income"
         android:layout_width="273dp"
         android:layout_height="55dp"
         android:layout_marginStart="68dp"
@@ -16,7 +16,7 @@
         android:layout_marginTop="48dp"
         android:background="#52527a "
         android:cursorVisible="true"
-        android:text="@string/txt_addincome"
+        android:text="@string/txt_add_income"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
@@ -57,7 +57,7 @@
         android:layout_marginTop="236dp"
         android:background="#9595b7"
         android:ems="10"
-        android:hint="DD/MM/YY"
+        android:hint="MM/DD/YYYY"
         android:inputType="text"
         android:text="@string/add_income_date"
         android:textColor="@android:color/background_light"
@@ -87,7 +87,7 @@
 
 
     <Button
-        android:id="@+id/income_save_btn"
+        android:id="@+id/save_income_btn"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="243dp"
         android:layout_height="44dp"
@@ -97,17 +97,17 @@
         android:background="#52527a "
         android:onClick="addIncome"
         android:shadowColor="#00706767"
-        android:text="@string/income_save_btn"
+        android:text="@string/save_income_btn"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
         android:textColorHint="@android:color/darker_gray"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="SAVE INCOME" />
+        tools:text="SAVE DETAILS" />
 
     <Button
-        android:id="@+id/income_clear_btn"
+        android:id="@+id/clear_income_btn"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="243dp"
         android:layout_height="44dp"
@@ -115,9 +115,9 @@
         android:layout_marginLeft="84dp"
         android:layout_marginTop="440dp"
         android:background="#52527a "
-        android:onClick="clearContols"
+        android:onClick="clearIncomeControls"
         android:shadowColor="#00706767"
-        android:text="@string/income_clear_btn"
+        android:text="@string/clear_income_btn"
         android:textColor="@android:color/background_light"
         android:textColorHighlight="@android:color/background_light"
         android:textColorHint="@android:color/darker_gray"
@@ -125,5 +125,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="CLEAR ALL" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

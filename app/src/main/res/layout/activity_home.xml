@@ -55,11 +55,38 @@
         android:layout_marginStart="60dp"
         android:layout_marginLeft="60dp"
         android:layout_marginTop="384dp"
-        android:onClick="goDebitors"
         android:text="DEBITORS"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/home_d" />
+
+    <Button
+        android:id="@+id/btnViewIncome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goViewIncomes"
+        android:text="ViewIncome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_goCreditors" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="289dp"
+        android:layout_marginRight="289dp"
+        android:layout_marginBottom="49dp"
+        android:onClick="dash"
+        android:text="Dash"
+        app:layout_constraintBottom_toTopOf="@+id/btnIncome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

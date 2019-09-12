@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#1f1f2e"
+    tools:context=".SearchIncomeActivity">
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="310dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/search_source"
+        android:background="#9595b7"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:hint="Enter source here:"/>
+
+
+    <ImageView
+        android:id="@+id/btn_search"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:background="#9595b7"
+        android:onClick="searchIncome"
+        android:padding="10dp"
+        android:src="@drawable/ic_search_black_24dp" />
+
+    <TextView
+        android:layout_marginTop="130dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_date"
+        android:text="date here"
+        android:background="#9595b7"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <TextView
+        android:layout_marginTop="180dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/display_amount"
+        android:text="amount here"
+        android:background="#9595b7"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="94dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="450dp"
+        android:background="#9595b7"
+        android:onClick="backToHome"
+        android:padding="10dp"
+        android:src="@drawable/ic_skip_previous_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btn_refresh"
+        android:layout_width="94dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="450dp"
+        android:background="#9595b7"
+        android:onClick="searchIncomeControls"
+        android:padding="10dp"
+        android:src="@drawable/ic_settings_backup_restore_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="94dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="450dp"
+        android:background="#9595b7"
+        android:onClick="deleteIncome"
+        android:padding="10dp"
+        android:src="@drawable/ic_delete_black_24dp" />
+
+
+
+
+
+</RelativeLayout>

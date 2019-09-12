@@ -82,6 +82,7 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
+                android:onClick="viewIncome"
                 android:orientation="vertical">
 
                 <ImageView
@@ -121,6 +122,7 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
+                android:onClick="searchIncome"
                 android:orientation="vertical">
 
                 <ImageView
@@ -152,6 +154,7 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
+                android:onClick="updateIncome"
                 android:orientation="vertical">
 
                 <ImageView
@@ -191,6 +194,7 @@
                 android:layout_height="match_parent"
                 android:background="#52527a"
                 android:gravity="center"
+                android:onClick="searchIncome"
                 android:orientation="vertical">
 
                 <ImageView

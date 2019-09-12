@@ -1,72 +1,40 @@
- package com.example.mybiz;
+package com.example.mybiz;
 
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.ContentObservable;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.strictmode.SqliteObjectLeakedViolation;
 import android.util.Log;
 
 public class DBhelper extends SQLiteOpenHelper {
+    private static final String DATABASE_NAME="MYBIZ.DB";
+    private static final int DATABSE_VERSION=1;
 
-    private static final String DATABASE_NAME = "USERINFO.DB";
-    private static final int DATABASE_VERSION = 1;
+    private static final String CREATE_QUERY=
+            "CREATE TABLE "+ Income.NewIncomeInfo.TABLE_NAME+"("+
+                    Income.NewIncomeInfo.INCOME_SOURCE+" TEXT,"+
+                    Income.NewIncomeInfo.INCOME_DATE+" TEXT,"+
+                    Income.NewIncomeInfo.INCOME_AMOUNT+" TEXT);";
 
 
-//-----------------CREDITOR TABLE-----------------
-    private static final String CREATE_QUERY =
-            "CREATE TABLE "+ Creditors.NewCreditorInfo.TABLE_NAME+"("+
-                    Creditors.NewCreditorInfo.USER_NAME+" TEXT,"+
-                    Creditors.NewCreditorInfo.USER_PHONE+" TEXT,"+
-                    Creditors.NewCreditorInfo.USER_AMOUNT+" TEXT," +
-                    Creditors.NewCreditorInfo.USER_DATE+" TEXT);";
-
-//-----------------INCOME TABLE--------------------
-    private static final String CREATE_QUERY1 =
-        "CREATE TABLE "+ Income.NewIncomeInfo.TABLE_NAME+"("+
-                Income.NewIncomeInfo.INCOME_DATE+" TEXT,"+
-                Income.NewIncomeInfo.SOURCE+" TEXT,"+
-                Income.NewIncomeInfo.INCOME_AMOUNT+" TEXT);";
-
-    public DBhelper(Context context) {
-
-        super(context,DATABASE_NAME,null,DATABASE_VERSION);
-        Log.e("DATABASE OPERATIONS","Database created / opened...");
+    public DBhelper (Context context){
+        super(context,DATABASE_NAME,null,DATABSE_VERSION);
+        Log.e("DATABASE_OPERATIONS","Database created / opened...");
     }
-
-
-
-
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL(CREATE_QUERY);
-        Log.e("DATABASE OPERATIONS","Creditor Table Created...");
+            db.execSQL(CREATE_QUERY);
+            Log.e("DATABASE_OPERATIONS","Table created...");
 
-        db.execSQL(CREATE_QUERY1);
-        Log.e("DATABASE OPERATIONS","Income Table Created...");
     }
-
-//------------------add creditors------------
-
-//    public void addInformation(String name, String phone, String amount, String data, SQLiteDatabase db){
-//
-//        ContentValues contentValues = new ContentValues();
-//        contentValues.put(Creditors.NewCreditorInfo.USER_NAME,name);
-//        contentValues.put(Creditors.NewCreditorInfo.USER_PHONE,phone);
-//        contentValues.put(Creditors.NewCreditorInfo.USER_AMOUNT,amount);
-//        contentValues.put(Creditors.NewCreditorInfo.USER_DATE,data);
-//        db.insert(Creditors.NewCreditorInfo.TABLE_NAME,null,contentValues);
-//        Log.e("DATABASE OPERATIONS","One Row Inserted...");
-//    }
-
-//---------------------add income-----------------
 
     public void addIncomeInfo(String source,String date, String amount,SQLiteDatabase db){
         ContentValues contentValues=new ContentValues();
-        contentValues.put(Income.NewIncomeInfo.SOURCE,source);
-        contentValues.put(Income.NewIncomeInfo.INCOME_DATE,date);
+        contentValues.put(Income.NewIncomeInfo.INCOME_SOURCE,date);
+        contentValues.put(Income.NewIncomeInfo.INCOME_DATE,source);
         contentValues.put(Income.NewIncomeInfo.INCOME_AMOUNT,amount);
         db.insert(Income.NewIncomeInfo.TABLE_NAME,null,contentValues);
         Log.e("DATABASE_OPERATIONS","One row is inserted...");
@@ -74,12 +42,39 @@ public class DBhelper extends SQLiteOpenHelper {
 
     public Cursor getInformations(SQLiteDatabase db){
         Cursor cursor;
-        String[] projections={Income.NewIncomeInfo.INCOME_DATE,
-                Income.NewIncomeInfo.SOURCE,
+        String[] projections={Income.NewIncomeInfo.INCOME_SOURCE,
+                Income.NewIncomeInfo.INCOME_DATE,
                 Income.NewIncomeInfo.INCOME_AMOUNT };
         cursor=db.query(Income.NewIncomeInfo.TABLE_NAME,projections,null,null,
                 null,null,null);
         return cursor;
+    }
+
+    public Cursor getIncome(String income_source,SQLiteDatabase sqLiteDatabase){
+        String[] projections = {Income.NewIncomeInfo.INCOME_DATE, Income.NewIncomeInfo.INCOME_AMOUNT};
+        String selection = Income.NewIncomeInfo.INCOME_SOURCE+" LIKE ?";
+        String[] selection_args = {income_source};
+        Cursor cursor=sqLiteDatabase.query(Income.NewIncomeInfo.TABLE_NAME,projections,selection,selection_args,null,null,null);
+        return cursor;
+    }
+
+    public void deleteIncome(String income_source,SQLiteDatabase sqLiteDatabase){
+        String selection = Income.NewIncomeInfo.INCOME_SOURCE+" LIKE ?";
+        String[] selection_args = {income_source};
+        sqLiteDatabase.delete(Income.NewIncomeInfo.TABLE_NAME,selection,selection_args);
+
+    }
+
+    public int updateIncomeInformation(String old_source, String new_source, String new_date, String new_amount,
+                                        SQLiteDatabase sqLiteDatabase){
+                ContentValues contentValues = new ContentValues();
+                contentValues.put(Income.NewIncomeInfo.INCOME_SOURCE,new_source);
+                contentValues.put(Income.NewIncomeInfo.INCOME_DATE,new_date);
+                contentValues.put(Income.NewIncomeInfo.INCOME_AMOUNT,new_amount);
+                String selection = Income.NewIncomeInfo.INCOME_SOURCE + " LIKE ?";
+                String[] selection_args = {old_source};
+                int count=sqLiteDatabase.update(Income.NewIncomeInfo.TABLE_NAME,contentValues,selection,selection_args);
+                return count;
     }
 
     @Override

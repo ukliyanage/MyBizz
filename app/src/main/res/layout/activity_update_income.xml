@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="#1f1f2e"
+    tools:context=".ActivityUpdateIncome">
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="310dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/update_source"
+        android:background="#9595b7"
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:hint="Enter source here:"/>
+
+
+    <ImageView
+        android:id="@+id/btn_update_search"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:background="#9595b7"
+        android:onClick="searchIncome"
+        android:padding="10dp"
+        android:src="@drawable/ic_search_black_24dp" />
+
+    <TextView
+        android:id="@+id/txt_update_income"
+        android:layout_width="273dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="148dp"
+        android:background="#52527a "
+        android:cursorVisible="true"
+        android:text="@string/txt_update_income"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/background_light"
+        android:textCursorDrawable="@android:drawable/alert_light_frame"
+        android:textSize="30sp"
+        app:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="UPDATE INCOME" />
+
+    <EditText
+        android:id="@+id/update_income_source"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="252dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="Source here"
+        android:inputType="textPersonName"
+        android:text="@string/update_income_source"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/update_income_date"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="302dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="Date here"
+        android:inputType="textPersonName"
+        android:text="@string/update_income_date"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <EditText
+        android:id="@+id/update_income_amount"
+        android:layout_width="328dp"
+        android:layout_height="43dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="352dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="Amount here"
+        android:inputType="textPersonName"
+        android:text="@string/update_income_amount"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_update_back"
+        android:layout_width="94dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="450dp"
+        android:background="#9595b7"
+        android:onClick="backToHome"
+        android:padding="10dp"
+        android:src="@drawable/ic_skip_previous_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btn_update_refresh"
+        android:layout_width="94dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="450dp"
+        android:background="#9595b7"
+        android:onClick="searchIncomeControls"
+        android:padding="10dp"
+        android:src="@drawable/ic_settings_backup_restore_black_24dp" />
+
+    <ImageView
+        android:id="@+id/btn_update"
+        android:layout_width="94dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="450dp"
+        android:background="#9595b7"
+        android:onClick="updateIncome"
+        android:padding="10dp"
+        android:src="@drawable/ic_system_update_alt_black_24dp" />
+
+
+
+
+</RelativeLayout>

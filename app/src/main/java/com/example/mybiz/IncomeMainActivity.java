@@ -14,13 +14,26 @@ public class IncomeMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_income_main);
     }
 
-//    public void addIncomes(View view){
-//        Intent intent=new Intent(this,AddIncome.class);
-//        startActivity(intent);
-//    }
+    public void addIncomes(View view){
+        Intent intent=new Intent(this,ActivityAddIncome.class);
+        startActivity(intent);
+    }
 
-//    public void goanother(View view){
-//        Intent intent=new Intent(this,Main2Activity.class);
-//        startActivity(intent);
-//    }
+    public void viewIncome(View view){
+        Intent intent=new Intent(this,ViewIncomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void searchIncome(View view){
+        Intent intent=new Intent(this,SearchIncomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void updateIncome(View view){
+        Intent intent=new Intent(this,ActivityUpdateIncome.class);
+        startActivity(intent);
+    }
+
+
+
 }
