@@ -37,19 +37,15 @@
 
 
 
-
     <string name="txt_income">INCOME</string>
-
-    <string name="txt_add_income">ADD INCOME</string>
+    <string name="txt_addincome">ADD INCOME</string>
     <string name="add_income_source"></string>
     <string name="add_income_date"></string>
     <string name="add_income_amount"></string>
-    <string name="save_income_btn">SAVE DETAILS</string>
-    <string name="clear_income_btn">CLEAR ALL</string>
-    <string name="txt_update_income">UPDATE INCOME</string>
-    <string name="update_income_source"></string>
-    <string name="update_income_date"></string>
-    <string name="update_income_amount"></string>
+    <string name="income_save_btn">SAVE INCOME</string>
+    <string name="income_clear_btn">CLEAR ALL</string>
+    <string name="searchtxt">SEARCH</string>
+    <string name="hometxt">HOME</string>
 
 
 </resources>
