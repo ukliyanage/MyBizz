@@ -25,11 +25,7 @@ public class HOME extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void dash(View view){
-        Intent intent=new Intent(this,DashBoard.class);
-        startActivity(intent);
-    }
-
+    
 
 
 
