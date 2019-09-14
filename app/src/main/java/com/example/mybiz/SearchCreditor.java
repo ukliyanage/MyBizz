@@ -1,15 +1,22 @@
 package com.example.mybiz;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class SearchCreditor extends AppCompatActivity {
 
@@ -18,6 +25,8 @@ public class SearchCreditor extends AppCompatActivity {
     DBhelper dBhelper;
     SQLiteDatabase sqLiteDatabase;
     String searchname;
+
+    private static final int REQUEST_CALL =1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +39,49 @@ public class SearchCreditor extends AppCompatActivity {
         display_phone  = findViewById(R.id.search_phone);
         display_date   = findViewById(R.id.search_date);
 
+        ImageView imageCall = findViewById(R.id.image_call);
+
         display_phone.setVisibility(View.GONE);
         display_amount.setVisibility(View.GONE);
         display_date.setVisibility(View.GONE);
+
+
+//        set call button
+        imageCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                makePhoneCall();
+            }
+        });
+
+    }
+
+
+//    make phone call
+    private void makePhoneCall() {
+        String number = display_phone.getText().toString();
+
+        if(number.trim().length() > 0){
+
+            if(ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+                ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.CALL_PHONE}, REQUEST_CALL);
+            }else {
+                String dial = "tel:" + number;
+                startActivity(new Intent(Intent.ACTION_CALL, Uri.parse(dial)));
+            }
+        }
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == REQUEST_CALL) {
+            if(grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                makePhoneCall();
+            } else {
+                Toast.makeText(this, "Permission DENIED", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
     public void searchCreditor(View view) {
