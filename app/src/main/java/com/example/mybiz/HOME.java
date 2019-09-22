@@ -25,6 +25,10 @@ public class HOME extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goRegister(View view){
+        Intent intent=new Intent(this,Register.class);
+        startActivity(intent);
+    }
     
 
 

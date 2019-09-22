@@ -8,7 +8,6 @@
     <string name="txt_debitor">DEBITORS</string>
 
 
-
     <!--    bskvj-->
     <string name="home_c">CREDITORS</string>
 
@@ -35,10 +34,6 @@
     <string name="btn_update">UPDATE</string>
 
 
-
-
-
-
     <string name="txt_income">INCOME</string>
 
     <string name="txt_add_income">ADD INCOME</string>
@@ -51,6 +46,17 @@
     <string name="update_income_source"></string>
     <string name="update_income_date"></string>
     <string name="update_income_amount"></string>
+
+    <string name="loginPass"></string>
+    <string name="imgbiz">TODO</string>
+    <string name="loginName"></string>
+    <string name="loginreg">Register Here</string>
+    <string name="r_email"></string>
+    <string name="r_confirm"></string>
+    <string name="r_password"></string>
+    <string name="regBtn">SAVE DETAILS</string>
+    <string name="reghome">Register</string>
+
 
 
 </resources>

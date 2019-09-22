@@ -1,6 +1,4 @@
- package com.example.mybiz;
-
-
+package com.example.mybiz;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -17,6 +15,7 @@ public class DBhelper extends SQLiteOpenHelper {
 
 
 //-----------------CREDITOR TABLE-----------------
+
     private static final String CREATE_QUERY =
             "CREATE TABLE "+ Business.NewCreditorInfo.TABLE_NAME+"("+
                     Business.NewCreditorInfo.CREDITOR_NAME+" TEXT,"+
@@ -30,6 +29,16 @@ public class DBhelper extends SQLiteOpenHelper {
                     Income.NewIncomeInfo.INCOME_SOURCE+" TEXT,"+
                     Income.NewIncomeInfo.INCOME_DATE+" TEXT,"+
                     Income.NewIncomeInfo.INCOME_AMOUNT+" TEXT);";
+
+
+
+//------------------REGISTER TABLE------------------
+
+    private static final String CREATE_QUERY2 =
+            "CREATE TABLE "+ Business.RegisterInfo.TABLE_NAME+"("+
+                    Business.RegisterInfo.USER_EMAIL+" TEXT,"+
+                    Business.RegisterInfo.PASSWORD+" TEXT);";
+
 
     public DBhelper(Context context) {
 
@@ -48,6 +57,11 @@ public class DBhelper extends SQLiteOpenHelper {
 
         db.execSQL(CREATE_QUERY1);
         Log.e("DATABASE OPERATIONS","Income Table Created...");
+
+        db.execSQL(CREATE_QUERY2);
+//        db.execSQL("CREATE TABLE register_info(user_email text PRIMARY KEY,pass_word text)");
+        Log.e("DATABASE OPERATIONS","Register Table Created...");
+
     }
 
 //---------------------add income-----------------
@@ -168,6 +182,28 @@ public class DBhelper extends SQLiteOpenHelper {
 
         return count;
 
+    }
+
+
+    //inserting in database register table
+    public boolean insert(String user_email, String pass_word){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("user_email",user_email);
+        contentValues.put("pass_word",pass_word);
+
+        long ins = db.insert("register_info",null,contentValues);
+        if (ins == -1) return false;
+        else return true;
+    }
+
+
+
+    public Boolean chkemail(String email){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM register_info WHERE user_email=?", new String[]{email});
+        if(cursor.getCount()>0) return false;
+        else return true;
     }
 
 
