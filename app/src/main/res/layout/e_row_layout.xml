@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#1f1f2e">
+
+
+<TextView
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_date"
+        android:text="Date"
+        android:gravity="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        android:fontFamily="serif"/>
+/>
+
+    <TextView
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_category"
+        android:text="category"
+        android:gravity="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        android:fontFamily="serif"/>
+    />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_amount"
+        android:text="amount"
+        android:gravity="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20dp"
+        android:fontFamily="serif"/>
+    />
+
+</LinearLayout>

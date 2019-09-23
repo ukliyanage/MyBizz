@@ -56,7 +56,7 @@
     <string name="r_password"></string>
     <string name="regBtn">SAVE DETAILS</string>
     <string name="reghome">Register</string>
-
+    <string name="add_expense"></string>
 
 
 </resources>

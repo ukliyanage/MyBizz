@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/update_btn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1f1f2e"
+    tools:context=".UpdateExpense">
+
+    <EditText
+        android:id="@+id/update_editText"
+        android:layout_width="206dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="60dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="enter category"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/update_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:background="#52527a "
+        android:onClick="searchExpenseInUP"
+        android:text="Search" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="169dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginBottom="64dp"
+        android:background="#52527a "
+        android:onClick="updateExpenseNew1"
+        android:text="Update" />
+
+    <TextView
+        android:id="@+id/title_up"
+        android:layout_width="236dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
+        android:layout_marginBottom="465dp"
+        android:background="#9595b7"
+        android:text="Update Expense"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/cat_edit_up1"
+        android:layout_width="170dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="182dp"
+        android:layout_marginRight="182dp"
+        android:layout_marginBottom="251dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="category here"
+        android:inputType="" />
+
+    <EditText
+        android:id="@+id/amnt4"
+        android:layout_width="173dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="174dp"
+        android:layout_marginRight="174dp"
+        android:layout_marginBottom="155dp"
+        android:background="#9595b7"
+        android:ems="10"
+        android:hint="amount here"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/dataPick8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="345dp"
+        android:background="#52527a "
+        android:text="date picker" />
+
+    <TextView
+        android:id="@+id/textViewPickDate"
+        android:layout_width="182dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="173dp"
+        android:layout_marginRight="173dp"
+        android:layout_marginBottom="355dp"
+        android:background="#9595b7"
+        android:text="Date" />
+
+</RelativeLayout>
