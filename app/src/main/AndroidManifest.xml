@@ -11,6 +11,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Register"></activity>
         <activity android:name=".Login" />
+        <activity android:name=".UpdateExpense"></activity>
+        <activity android:name=".expense_search" />
+        <activity android:name=".ExpensesListActivity" />
+        <activity android:name=".ExpenseMain"/>
+        <activity android:name=".AddExpense" />
         <activity android:name=".ActivityDashboard" />
         <activity android:name=".ActivityUpdateIncome" />
         <activity android:name=".SearchIncomeActivity" />

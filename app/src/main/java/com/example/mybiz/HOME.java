@@ -29,9 +29,10 @@ public class HOME extends AppCompatActivity {
         Intent intent=new Intent(this,Register.class);
         startActivity(intent);
     }
-    
 
-
-
+    public void goExpences(View view){
+        Intent intent=new Intent(this,ExpenseMain.class);
+        startActivity(intent);
+    }
 
 }
